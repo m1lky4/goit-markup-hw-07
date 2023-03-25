@@ -261,16 +261,16 @@ body {
       ),
       url(../hero/tablet@1x.jpg);
   }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../hero/tablet@2x.jpg);
-    }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../hero/tablet@2x.jpg);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -840,7 +840,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  max-width: 408px;
+  max-width: 392px;
   padding: 72px 16px 24px 16px;
   width: 100%;
   background-color: #fcfcfc;
@@ -853,6 +853,7 @@ ul {
 @media only screen and (min-width: 768px) {
   .modal {
     padding: 72px 24px 24px 24px;
+    max-width: 408px;
   }
 }
 .modal-text {
@@ -864,7 +865,7 @@ ul {
   color: var(--main-text-color);
 }
 .modal-form {
-  min-width: 360px;
+  max-width: 360px;
 }
 .modal-group:not(:last-child) {
   margin-bottom: 8px;
