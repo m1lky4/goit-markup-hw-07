@@ -212,7 +212,7 @@ body {
 .hero-title {
   max-width: 320px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 72px;
   color: var(--main-bg-color);
   font-size: 36px;
   line-height: 1.11;
@@ -223,6 +223,12 @@ body {
     font-size: 56px;
     line-height: 1.08;
     max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-title {
+    margin-bottom: 48px;
   }
 }
 .hero {
@@ -235,8 +241,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   max-width: 1440px;
   background-position: center;
   background-size: cover;
@@ -280,6 +286,8 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../hero/desk@1x.jpg);
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
